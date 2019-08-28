@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66342169"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/noun"
+        android:layout_width="115dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:text="Noun:"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="115dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Animal:"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verb" />
+
+    <TextView
+        android:id="@+id/adjective"
+        android:layout_width="154dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Adjective:"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noun" />
+
+    <TextView
+        android:id="@+id/verb"
+        android:layout_width="115dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Verb:"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adjective" />
+
+    <EditText
+        android:id="@+id/editAdjective"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="Enter Text"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toEndOf="@+id/adjective"
+        app:layout_constraintTop_toBottomOf="@+id/editNoun" />
+
+    <EditText
+        android:id="@+id/editVerb"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:hint="Enter Text"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toEndOf="@+id/verb"
+        app:layout_constraintTop_toBottomOf="@+id/editAdjective" />
+
+    <EditText
+        android:id="@+id/editAnimal"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Text"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/editVerb" />
+
+    <EditText
+        android:id="@+id/editNoun"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="124dp"
+        android:hint="Enter Text"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toEndOf="@+id/noun"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="45dp"
+        android:text="Generate Story"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="sendInfo"/>
+
+</android.support.constraint.ConstraintLayout>
