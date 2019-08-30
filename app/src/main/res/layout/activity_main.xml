@@ -9,58 +9,58 @@
 
     <TextView
         android:id="@+id/noun"
-        android:layout_width="115dp"
-        android:layout_height="56dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="124dp"
         android:text="Noun:"
         android:textColor="@color/colorAccent"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="115dp"
-        android:layout_height="56dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="Animal:"
         android:textColor="@color/colorAccent"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verb" />
 
     <TextView
         android:id="@+id/adjective"
-        android:layout_width="154dp"
-        android:layout_height="62dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="Adjective:"
         android:textColor="@color/colorAccent"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/noun" />
 
     <TextView
         android:id="@+id/verb"
-        android:layout_width="115dp"
-        android:layout_height="56dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="Verb:"
         android:textColor="@color/colorAccent"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adjective" />
 
     <EditText
         android:id="@+id/editAdjective"
-        android:layout_width="164dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="163dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="11dp"
         android:hint="Enter Text"
         android:textColor="@color/colorText"
         app:layout_constraintStart_toEndOf="@+id/adjective"
@@ -69,9 +69,9 @@
     <EditText
         android:id="@+id/editVerb"
         android:layout_width="164dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="13dp"
         android:hint="Enter Text"
         android:textColor="@color/colorText"
         app:layout_constraintStart_toEndOf="@+id/verb"
@@ -80,9 +80,9 @@
     <EditText
         android:id="@+id/editAnimal"
         android:layout_width="164dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
         android:hint="Enter Text"
         android:textColor="@color/colorText"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -90,10 +90,10 @@
 
     <EditText
         android:id="@+id/editNoun"
-        android:layout_width="164dp"
-        android:layout_height="55dp"
+        android:layout_width="163dp"
+        android:layout_height="38dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="122dp"
         android:hint="Enter Text"
         android:textColor="@color/colorText"
         app:layout_constraintStart_toEndOf="@+id/noun"
@@ -103,11 +103,38 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="45dp"
-        android:text="Generate Story"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/custombutton"
+        android:fontFamily="monospace"
+        android:onClick="sendInfo"
+        android:text="Generate Story!"
+        android:textColor="#9FC0A0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:includeFontPadding="true"
+        android:text="Rad Mad Libs"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="148dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="372dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sendInfo"/>
+        app:srcCompat="@drawable/george" />
 
 </android.support.constraint.ConstraintLayout>

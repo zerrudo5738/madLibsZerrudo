@@ -4,12 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondMadLib">
+    tools:context=".SecondMadLib"
+    android:background="#66342169">
 
     <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/textView"
+        android:layout_width="272dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Here's your story!"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:textColor="@color/colorAccent"
         android:id="@+id/story"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="342dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
