@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import static android.graphics.Typeface.BOLD;
+
 public class SecondMadLib extends AppCompatActivity {
 
     @Override
