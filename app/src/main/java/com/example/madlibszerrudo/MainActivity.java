@@ -21,23 +21,45 @@ public class MainActivity extends AppCompatActivity {
         EditText adjective = (EditText) findViewById(R.id.editAdjective);
         EditText verb = (EditText) findViewById(R.id.editVerb);
         EditText animal = (EditText) findViewById(R.id.editAnimal);
+        try {
 
-        // extracting the text from those edit text fields
-        String nounStr = noun.getText().toString();
-        String adjectiveStr = adjective.getText().toString();
-        String verbStr = verb.getText().toString();
-        String animalStr = animal.getText().toString();
+            // extracting the text from those edit text fields
+            String nounStr = noun.getText().toString();
+            String adjectiveStr = adjective.getText().toString();
+            String verbStr = verb.getText().toString();
+            String animalStr = animal.getText().toString();
 
-        // Creating the intent object so I can send data
-        Intent intent = new Intent(this, SecondMadLib.class);
+            // replaces objects with default filler if user does not enter
+            if(nounStr.length() == 0){
+                nounStr = "stick";
+            }
+            if(adjectiveStr.length() == 0){
+                adjectiveStr = "big";
+            }
+            if(verbStr.length() == 0){
+                verbStr = "play";
+            }
+            if(animalStr.length() == 0){
+                animalStr = "dog";
+            }
 
-        // putting data from edit text fields into intent to send to other activity
-        intent.putExtra(SecondMadLib.NOUN, nounStr);
-        intent.putExtra(SecondMadLib.ADJECTIVE, adjectiveStr);
-        intent.putExtra(SecondMadLib.VERB, verbStr);
-        intent.putExtra(SecondMadLib.ANIMAL, animalStr);
+                // Creating the intent object so I can send data
+                Intent intent = new Intent(this, SecondMadLib.class);
 
-        // loads the next activity
-        startActivity(intent);
+                // putting data from edit text fields into intent to send to other activity
+                intent.putExtra(SecondMadLib.NOUN, nounStr);
+                intent.putExtra(SecondMadLib.ADJECTIVE, adjectiveStr);
+                intent.putExtra(SecondMadLib.VERB, verbStr);
+                intent.putExtra(SecondMadLib.ANIMAL, animalStr);
+
+                 // loads the next activity
+                 startActivity(intent);
+
+
+
+        }
+        catch (Exception e){
+
+        }
     }
 }

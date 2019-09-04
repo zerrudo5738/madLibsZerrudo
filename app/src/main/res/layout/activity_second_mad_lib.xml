@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondMadLib"
-    android:background="#66342169">
+    android:background="#66342169"
+    tools:context=".SecondMadLib">
 
     <TextView
-        android:textColor="@color/colorAccent"
         android:id="@+id/textView"
         android:layout_width="272dp"
         android:layout_height="52dp"
@@ -16,21 +15,54 @@
         android:layout_marginTop="88dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Here's your story!"
+        android:textColor="@color/colorAccent"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:textColor="@color/colorAccent"
         android:id="@+id/story"
         android:layout_width="342dp"
         android:layout_height="141dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/colorAccent"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="430dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/story"
+        app:srcCompat="@drawable/i" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="373dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="256dp"
+        android:rotation="-50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logang" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="223dp"
+        android:layout_height="295dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dab" />
 
 </android.support.constraint.ConstraintLayout>
