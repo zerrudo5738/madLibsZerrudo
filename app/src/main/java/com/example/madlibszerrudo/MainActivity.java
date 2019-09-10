@@ -55,11 +55,12 @@ public class MainActivity extends AppCompatActivity {
                  // loads the next activity
                  startActivity(intent);
 
-
-
         }
         catch (Exception e){
 
         }
     }
+
+
+
 }
